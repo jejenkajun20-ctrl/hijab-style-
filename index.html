@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hijab Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <h1>Hijab Style ✨</h1>
+      <p>Temukan gaya hijab favoritmu</p>
+    </header>
+
+    <main>
+      <section class="preview">
+        <div class="avatar">
+          <div class="hijab" id="hijab"></div>
+          <div class="face">☺</div>
+        </div>
+        <h2 id="styleName">Hijab Pashmina</h2>
+        <p id="styleDescription">Gaya simpel dan elegan untuk sehari-hari.</p>
+      </section>
+
+      <section class="controls">
+        <h3>Pilih Style</h3>
+        <div class="styles">
+          <button onclick="changeStyle('Pashmina', 'Gaya simpel dan elegan untuk sehari-hari.')">
+            Pashmina
+          </button>
+          <button onclick="changeStyle('Segi Empat', 'Cocok untuk tampilan rapi dan formal.')">
+            Segi Empat
+          </button>
+          <button onclick="changeStyle('Turban', 'Tampilan modern dan stylish.')">
+            Turban
+          </button>
+        </div>
+
+        <h3>Pilih Warna</h3>
+        <div class="colors">
+          <button class="color beige" onclick="changeColor('#d8b08c')"></button>
+          <button class="color black" onclick="changeColor('#222')"></button>
+          <button class="color pink" onclick="changeColor('#e99aaa')"></button>
+          <button class="color blue" onclick="changeColor('#7198c8')"></button>
+          <button class="color green" onclick="changeColor('#789b82')"></button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

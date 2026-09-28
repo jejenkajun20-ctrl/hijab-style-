@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f1ec;
+  color: #4a3a35;
+}
+
+.app {
+  width: 100%;
+  max-width: 450px;
+  min-height: 100vh;
+  margin: auto;
+  background: white;
+}
+
+header {
+  background: linear-gradient(135deg, #b98568, #e2bca5);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+main {
+  padding: 25px 20px;
+}
+
+.preview {
+  text-align: center;
+  background: #fff8f4;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.avatar {
+  width: 190px;
+  height: 210px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.face {
+  position: absolute;
+  width: 105px;
+  height: 125px;
+  background: #e8b994;
+  border-radius: 50%;
+  left: 42px;
+  top: 58px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: #593d32;
+}
+
+.hijab {
+  position: absolute;
+  width: 175px;
+  height: 190px;
+  background: #d8b08c;
+  border-radius: 50% 50% 35% 35%;
+  left: 7px;
+  top: 10px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.preview h2 {
+  margin-bottom: 8px;
+}
+
+.preview p {
+  color: #806b62;
+}
+
+.controls h3 {
+  margin: 20px 0 12px;
+}
+
+.styles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.styles button {
+  border: none;
+  padding: 12px 5px;
+  border-radius: 10px;
+  background: #ead6ca;
+  color: #59443b;
+  cursor: pointer;
+}
+
+.styles button:hover {
+  background: #c99579;
+  color: white;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
+.color {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px #bbb;
+  cursor: pointer;
+}
+
+.beige { background: #d8b08c; }
+.black { background: #222; }
+.pink { background: #e99aaa; }
+.blue { background: #7198c8; }
+.green { background: #789b82; }
+
